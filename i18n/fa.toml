@@ -22,3 +22,7 @@ other = "Add/View Comments"
 
 [modifiedOn]
 other = "Modified on"
+
+[categoryEntries]
+one = "{{.Count}} entry"
+other = "{{.Count}} entries"
