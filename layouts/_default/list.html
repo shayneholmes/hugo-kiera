@@ -14,7 +14,12 @@
     {{- range .Pages }}
     <li>
       <a href="{{ .Permalink }}">{{ if .Draft }}DRAFT: {{end}}{{ .Title | markdownify }}</a>
-      <time class="date-meta">{{ .Date.Format "Jan 2" }}</time>
+      {{- if and (not $.Data.Singular) .Params.categories }}
+      in
+      {{- range $i, $c := .Params.categories }} {{- if $i }}, {{ end }}
+      <a href="{{ "/categories/" | relURL }}{{$c | urlize }}/">{{ $c }}</a>
+      {{- end }} {{- end }}
+      <time class="date-meta">{{ .Date.Format "2 Jan" }}</time>
     </li>
     {{- end }}
   </ul>
