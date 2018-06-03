@@ -6,7 +6,7 @@
   {{- .Content }}
   <ul>
     {{- range $key, $value := .Data.Terms }}
-    <li><a href="{{ $key | urlize }}">{{ $key }}</a> <span class="count">{{ i18n "categoryEntries" .Count}}</span></li>
+    <li><a href="{{ $key | urlize }}">{{ $key | humanize }}</a> <span class="count">{{ i18n "categoryEntries" .Count}}</span></li>
     {{- end }}
   </ul>
 </section>
