@@ -187,10 +187,20 @@ time {
 
 #container footer {
   border-top: solid 1px #555555;
+  padding: 1em 0;
 }
 
-#container footer h6 {
+#container footer ul {
   font-size: 0.8em;
+  margin: 0em;
+  padding: 0em;
+  display: inline;
+  list-style: none;
+}
+
+#container footer ul li {
+  display: inline;
+  margin-left: 1em;
 }
 
 .meta-aside, #container main section#home ul li aside, #container main article aside {
