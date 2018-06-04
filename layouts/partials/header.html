@@ -16,7 +16,6 @@
   <h1>
     <a href="{{ relURL "/" }}">{{ .Site.Title | markdownify }}</a>
   </h1>
-  {{- partial "social-media" . }}
   {{- with .Site.Params.tagline }}
   <p><em>{{ . | markdownify }}</em></p>
   {{- end }}
