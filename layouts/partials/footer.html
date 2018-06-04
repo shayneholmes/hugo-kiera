@@ -10,7 +10,7 @@
             {{ range .Site.Menus.footer }}
                 <li>
                     <h6><a class="{{if or ($currentPage.IsMenuCurrent "footer" .) ($currentPage.HasMenuCurrent "footer" .) }}active{{end}}" href="{{ .URL | relURL }}">
-                    <i class="fa-li fa {{ .Pre }} fa-lg"></i><span>{{ .Name }}</span>
+                        <span>{{ .Name }}</span>
                     </a></h6>
                 </li>
             {{ end }}

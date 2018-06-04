@@ -30,7 +30,7 @@
           {{- if isset $.Site.Params.Author .id }}
              <li>
                <a href="{{ printf .url (index $.Site.Params.Author .id) }}" title="{{ .title }}">
-               <i class="{{ .icon }} fa-lg"></i>
+                 {{ .id }}
                </a>
              </li>
            {{- end -}}

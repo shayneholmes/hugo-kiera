@@ -15,7 +15,6 @@
   {{- end }}
 
   <link rel="stylesheet" href="{{ "css/normalize.min.css" | relURL }}" />
-  <link rel="stylesheet" href="{{ "fontawesome/css/all.min.css" | absURL }}" />
   {{ if .Site.Params.google_fonts }}
     {{ $url_part := (delimit .Site.Params.google_fonts "|") | safeHTMLAttr }}
     <link {{ printf "href=\"//fonts.googleapis.com/css?family=%s\"" $url_part | safeHTMLAttr }} rel="stylesheet">
