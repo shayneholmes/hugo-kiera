@@ -3,7 +3,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
-  color: #cccccc;
+  color: #eee;
   background-color: #333;
 }
 
@@ -222,7 +222,7 @@ time {
 }
 
 a {
-  color: #999999;
+  color: #ccc;
   text-decoration: none;
 }
 
