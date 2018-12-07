@@ -1,6 +1,7 @@
 {{ define "main" }}
 
 <section id="home">
+  {{ .Content }}
   <ul>
     {{ range $index, $page := first 5 (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) }}
     <li {{if eq $index 0}}class="first"{{end}}>
