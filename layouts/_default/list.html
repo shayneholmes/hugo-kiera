@@ -2,8 +2,8 @@
 
 <section id="list">
   {{- $baseurl := .Site.BaseURL }}
-  {{- if eq .Data.Singular "tag" }}
-  <h2>#{{ .Title | lower }}</h2>
+  {{- if or (eq .Data.Singular "tag") (eq .Data.Singular "category") }}
+  <h2>{{ .Data.Term | humanize }}</h2>
   {{- else }}
   <h2>{{ .Title }}</h2>
   {{- end }}
