@@ -1,4 +1,4 @@
-{{ if not .Params.meta }}
+{{ if and (not .Params.meta) (eq .Type "blog") }}
 <section class="post-nav">
   <ul>
     {{- with .PrevInSection }}
