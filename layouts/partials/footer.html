@@ -10,6 +10,14 @@
     <li>
       <a href="{{ "index.xml" | absURL }}">Subscribe</a></h6>
     </li>
+    {{ $currentPage := . }}
+    {{- range .Site.Menus.bottom }}
+    <li>
+      <a class="{{if or ($currentPage.IsMenuCurrent "bottom" .) ($currentPage.HasMenuCurrent "bottom" .) }}active{{end}}" href="{{.URL}}">
+        <span>{{ .Name }}</span>
+      </a>
+    </li>
+    {{- end }}
   </ul>
 </footer>
 
