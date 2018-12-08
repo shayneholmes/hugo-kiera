@@ -351,16 +351,6 @@ blockquote {
   box-shadow: 0 -1px 0 #333333 inset;
 }
 
-blockquote::before {
-  content: "\f10d";
-  font-size: 3em;
-  font-family: "FontAwesome";
-  color: rgba(64, 64, 64, 0.3);
-  position: absolute;
-  left: 6px;
-  top: 0;
-}
-
 @media only screen and (max-width: 800px) {
   blockquote {
     margin: 1em 0;
