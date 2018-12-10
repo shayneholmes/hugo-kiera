@@ -5,7 +5,7 @@
   <ul>
     {{ range $index, $page := first 5 (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) }}
     <li {{if eq $index 0}}class="first"{{end}}>
-      <h1><a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
+      <h2><a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
       {{ partial "aside" . }}
       <p>{{ .Summary }}</p>
       {{ if .Truncated }}
