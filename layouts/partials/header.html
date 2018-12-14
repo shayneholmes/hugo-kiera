@@ -7,7 +7,9 @@
   {{ partial "meta" . }}
   {{ partial "header_feeds" . -}}
   {{ partial "header_includes" . -}}
-  {{ partial "google_analytics" . -}}
+  {{- if not .Site.IsServer -}}
+    {{ partial "google_analytics" . -}}
+  {{- end -}}
 </head>
 
 <body>
