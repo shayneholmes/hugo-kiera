@@ -1,5 +1,8 @@
 <article>
   <h1>{{ .Title }}</h1>
+  {{ with .OutputFormats.Get "signedtext" -}}
+  <a href="{{ .Permalink | safeURL }}">view as text</a>
+  {{ end -}}
   {{- if not .Params.meta }}
 {{ partial "aside" . }}
   {{- end }}
