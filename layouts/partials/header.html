@@ -8,7 +8,7 @@
   {{ partialCached "header_includes" . -}}
 
   {{ if (templates.Exists "partials/header_supplement.html") }}
-    {{ partialCached "header_supplement.html" . -}}
+    {{ partial "header_supplement.html" . -}}
   {{ end }}
 </head>
 
