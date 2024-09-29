@@ -4,7 +4,9 @@ copyright = "Copyright &copy; 2023 - Author Name"
 canonifyurls = true
 theme = "hugo-kiera"
 
-paginate = 3
+[pagination]
+  pagersize = 3
+  path = 'page'
 
 summaryLength = 30
 enableEmoji = true
@@ -13,7 +15,7 @@ pygmentsCodeFences = true
 #disqusShortname = "myShortName"
 
 # Note: to disable a social network icon delete or comment out the corresponding line
-[author]
+[params.author]
     name = "Example"
     github = "funkydan2/hugo-kiera"
     #gitlab = "username"
