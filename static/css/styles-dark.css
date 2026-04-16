@@ -160,7 +160,6 @@ time {
   overflow-x: auto;
   padding: 0.8em;
   font-size: 0.9em;
-  box-shadow: 0 -1px 0 #bbbbbb inset;
 }
 
 #container main article .highlight pre {
@@ -192,7 +191,6 @@ time {
   border-color: #cccccc #cccccc #bbbbbb;
   border-image: none;
   border-radius: 3px;
-  box-shadow: 0 -1px 0 #bbbbbb inset;
 }
 
 #container main h1 {
@@ -245,7 +243,6 @@ justify-content: flex-start;
 line-height: 24px;
 padding: 8px;
 position: relative;
-box-shadow: inset 0 1px 2px rgba(17, 17, 17, 0.1);
 max-width: 100%;
 width: 100%;
 }
@@ -298,7 +295,6 @@ a {
 
 .image, figure img, img {
   width: 100%;
-  box-shadow: 0 3px 3px #bbbbbb;
 }
 
 /**
@@ -308,7 +304,6 @@ header .full-image, header figure.full img, header img[src*="full"],
 article .full-image, article figure.full img, article img[src*="full"],
 section:not(#list):not(#home) .full-image, section:not(#list):not(#home) figure.full img, section:not(#list):not(#home) img[src*="full"] {
   width: 100%;
-  box-shadow: 0 3px 3px #bbbbbb;
 }
 
 @supports (width: 100vw) {
@@ -326,7 +321,6 @@ section:not(#list):not(#home) .full-image, section:not(#list):not(#home) figure.
 
 .mid-image, figure.mid img, img[src*="mid"] {
   width: 100%;
-  box-shadow: 0 3px 3px #bbbbbb;
 }
 
 @supports (width: 100vw) {
@@ -352,7 +346,6 @@ section:not(#list):not(#home) .full-image, section:not(#list):not(#home) figure.
   width: 300px;
   float: left;
   margin: 0 1em 1em -3em;
-  box-shadow: 0 3px 3px #bbbbbb;
 }
 
 @media only screen and (max-width: 800px) {
@@ -367,7 +360,6 @@ section:not(#list):not(#home) .full-image, section:not(#list):not(#home) figure.
   width: 300px;
   float: right;
   margin: 0 -3em 1em 1em;
-  box-shadow: 0 3px 3px #bbbbbb;
 }
 
 @media only screen and (max-width: 800px) {
@@ -425,7 +417,6 @@ blockquote {
   padding: 0.5em 2em;
   position: relative;
   background-color: #3e3b3c;
-  box-shadow: 0 -1px 0 #797979 inset;
 }
 
 blockquote::before {
