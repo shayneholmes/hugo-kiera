@@ -1,6 +1,7 @@
 {{ define "main" }}
 
 <section id="home">
+  {{ .Content }}
   <ul>
     {{ $pages := where site.RegularPages "Type" "posts" }}
     {{ $paginator := .Paginate $pages }}
