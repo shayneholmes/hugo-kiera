@@ -47,7 +47,7 @@ time {
 }
 
 #container header h1 a {
-  color: #ccc;
+  color: inherit;
 }
 
 #container header ul {
