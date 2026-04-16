@@ -20,7 +20,7 @@
     {{ $url_part := (delimit .Site.Params.google_fonts "|") | safeHTMLAttr }}
     <link {{ printf "href=\"//fonts.googleapis.com/css?family=%s\"" $url_part | safeHTMLAttr }} rel="stylesheet">
   {{ else}}
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Montserrat" />
   {{ end }}
   {{ if .Site.Params.disableDarkModeCSS }}
   <link rel="stylesheet" type="text/css" href="{{ "css/styles-light.css" | relURL}}" />
