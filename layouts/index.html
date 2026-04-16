@@ -4,7 +4,7 @@
   {{ .Content }}
   <ul>
     {{ $pages := where site.RegularPages "Type" "posts" }}
-    {{ $paginator := .Paginate $pages }}
+    {{ $paginator := .Paginate $pages .Site.Params.frontPageSize }}
     {{ range $index, $page := $paginator.Pages }}
 
     <li {{if eq $index 0}}class="first" {{end}}>
@@ -19,7 +19,5 @@
     {{ end }}
   </ul>
 </section>
-
-{{ template "_internal/pagination.html" . }}
 
 {{ end }}
