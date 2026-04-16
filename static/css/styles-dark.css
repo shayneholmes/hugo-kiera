@@ -79,6 +79,7 @@ time {
 
 #container nav a {
   text-decoration: none;
+  color: inherit;
 }
 
 #container nav ul {
