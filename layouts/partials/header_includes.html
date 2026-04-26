@@ -26,7 +26,7 @@
   {{- range append .Site.Params.customCSS (slice "css/styles.css" "css/normalize.min.css" ) -}}
     {{ $cssResources = append (resources.Get .) $cssResources }}
   {{- end -}}
-  {{ with resources.Concat "css/foobar.css" $cssResources | css.Build }}
+  {{ with resources.Concat "css/styles.css" $cssResources | css.Build }}
     {{ if hugo.IsDevelopment }}
       <link rel="stylesheet" href="{{ .RelPermalink }}">
     {{ else }}
